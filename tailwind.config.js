@@ -35,18 +35,24 @@ module.exports = {
         'memory' : 'rgb(255,251,242)',
         'verbal' : 'rgb(242,251,250)',
         'visual' : 'rgb(243,243,253)',
+        'boxContinue' : 'hsl(224, 30%, 27%)',
       },
       textColor: {
         'reaction' : 'rgb(255,87,87)',
         'memory' : 'rgb(255,185,51)',
         'verbal' : 'rgb(65,204,172)',
         'visual' : 'rgb(39,56,218)',
+        'result' : 'hsl(241, 100%, 89%)',
+        'percent' : 'rgb(175,177,193)'
       },
       colors: {
         'boxTop' : 'hsl(252, 100%, 67%)',
         'boxBottom' : 'hsl(241, 81%, 54%)',
         'circleTop' : 'hsla(256, 72%, 46%, 1)',
         'circleBottom' : 'hsla(241, 72%, 46%, 0)',
+      },
+      dropShadow: {
+        'boxDrop' : '0 25px 25px hsl(221, 100%, 96%)'
       },
     },
   },
