@@ -20,10 +20,10 @@ const BarComponent = ({icon, title, point, background, textColor}) => {
 
 export default function ResultSummary() {
     return (
-        <div className="w-full h-parent flex justify-center items-center bg-white">
-            <div className="flex h-box w-box bg-white drop-shadow-boxDrop rounded-3xl">
-                <div className="h-full w-1/2 py-4 rounded-3xl bg-gradient-to-t from-boxBottom to-boxTop">
-                    <div className="flex h-full flex-col items-center justify-around">
+        <div className="w-full flex justify-center items-center bg-white mobile:h-mobileContainer desktop:h-desktopContainer">
+            <div className="flex bg-white drop-shadow-boxDrop rounded-3xl mobile:flex-col mobile:w-mobile mobile:h-mobile desktop:flex-row desktop:w-desktop desktop:h-desktop">
+                <div className="rounded-3xl bg-gradient-to-t from-boxBottom to-boxTop desktop:h-full desktop:w-1/2 py-4">
+                    <div className="flex h-full flex-col items-center justify-around mobile:h-mobileCard">
                         <div className="font-semibold text-result">Your Result</div>
                         <div className="flex flex-col justify-center items-center w-circle h-circle rounded-full bg-gradient-to-b from-circleTop to-circleBottom">
                             <div className="font-semibold text-6xl">76</div>
@@ -34,10 +34,10 @@ export default function ResultSummary() {
                     </div>
                 </div>
 
-                <div className="h-full w-1/2 rounded-3xl">
+                <div className="rounded-3xl h-full mobile:w-full desktop:w-1/2">
                     <div className="flex h-full flex-col m-border text-gray-900">
-                        <div className="mb-2 font-semibold">Summary</div>
-                        <div>
+                        <div className="font-semibold">Summary</div>
+                        <div className="my-3">
                             <BarComponent icon={<IconReaction />} title={'Reaction'} point={80} textColor="text-reaction" background="bg-reaction"/>
                             <BarComponent icon={<IconMemory />} title={'Memory'} point={92} textColor="text-memory" background="bg-memory"/>
                             <BarComponent icon={<IconVerbal />} title={'Verbal'} point={61} textColor="text-verbal" background="bg-verbal"/>

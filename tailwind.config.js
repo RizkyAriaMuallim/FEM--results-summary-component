@@ -13,12 +13,17 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       height: {
-        'parent' : '750px',
-        'box' : '400px',
+        'desktopContainer' : '750px',
+        'mobileContainer' : '882px',
+
+        'desktop' : '400px',
+        'mobile' : '77s0px',
+        'mobileCard' : '350px',
         'circle' : '150px'
       },
       width: {
-        'box' : '600px',
+        'desktop' : '600px',
+        'mobile' : '400px',
         'circle' : '150px'
       },
       maxWidth: {
@@ -54,6 +59,10 @@ module.exports = {
       dropShadow: {
         'boxDrop' : '0 25px 25px hsl(221, 100%, 96%)'
       },
+      screens: {
+        'mobile' : '375px',
+        'desktop' : '1440px',
+      }
     },
   },
   plugins: [],
